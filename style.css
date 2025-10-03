@@ -47,6 +47,7 @@ header {
 
 .nav-list li {
 	list-style: none;
+	cursor: pointer;
 }
 
 .nav-heading {
@@ -151,7 +152,7 @@ header {
 	align-items: flex-start;
 	background-color: #e1ede6;
 	flex: 1 1 30%;
-    min-width: 250px;
+	min-width: 250px;
 	padding: 20px;
 	box-sizing: border-box;
 	gap: 10px;
@@ -202,4 +203,78 @@ header {
 	transition: all 0.3s ease;
 	background-color: #598d66;
 	color: white;
+}
+
+.newbies {
+	position: relative;
+	overflow: hidden;
+	padding-top: 66px;
+	padding-bottom: 73px;
+	background-image: url('img/Rectangle.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.newbies::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background: rgba(13, 43, 67, 0.8);
+	mix-blend-mode: multiply;
+	filter: blur(315px);
+	z-index: 1;
+}
+
+.newbies-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	max-width: 53%;
+	gap: 30px;
+}
+
+.newbies-heading {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 100%;
+	color: white;
+}
+
+.newbies-subheading {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	color: white;
+	text-align: left;
+}
+
+.newbies-heading-box {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.newbies-subheading-box {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.newbies-button {
+	border-radius: none;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 20px 60px;
+	background-color: #eedb6d;
+	margin-top: 30px;
+	cursor: pointer;
 }
