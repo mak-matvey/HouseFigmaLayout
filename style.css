@@ -321,3 +321,71 @@ header {
 	display: flex;
 	gap: 20px;
 }
+
+footer {
+	background-color: #e1ede6;
+}
+
+.footer-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding: 20px 0;
+}
+
+.address-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.address-subheading,
+.footer-heading {
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	color: #2c2d35;
+}
+
+.footer-heading {
+	margin-bottom: 8px;
+}
+
+.footer-subheading {
+	font-weight: 500;
+	font-size: 18px;
+	color: #86928b;
+}
+
+.noveity-list,
+.reproductions-list,
+.about-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.noveity-list li,
+.reproductions-list li,
+.about-list li {
+	list-style: none;
+}
+
+.another-links-box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-left: 200px;
+}
+
+.socials {
+	display: flex;
+	gap: 35px;
+}
+
+.rights p {
+	font-size: 12px;
+}
