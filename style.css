@@ -27,7 +27,8 @@ body {
 	padding: 0 20px;
 }
 
-header {
+header,
+footer {
 	background-color: #e1ede6;
 }
 
@@ -45,7 +46,10 @@ header {
 	margin-left: 200px;
 }
 
-.nav-list li {
+.nav-list li,
+.reproductions-list li,
+.noveity-list li,
+.about-list li {
 	list-style: none;
 	cursor: pointer;
 }
@@ -86,17 +90,20 @@ header {
 	color: #86928b;
 }
 
+button {
+	padding: 20px 60px;
+	font-family: 'Raleway', sans-serif;
+	cursor: pointer;
+	font-weight: 500;
+}
+
 .hero-button {
 	color: #598d66;
-	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
-	font-weight: 500;
 	border-radius: 0;
-	padding: 20px 60px;
 	border: 1px solid;
 	background-color: white;
 	margin-top: 30px;
-	cursor: pointer;
 }
 
 .catalog {
@@ -120,7 +127,6 @@ header {
 .catalog-button {
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
-	font-weight: 500;
 	color: #2c2d35;
 	background-color: #d4e8d9;
 	padding: 10px 20px;
@@ -128,11 +134,11 @@ header {
 	border: none;
 }
 
-.catalog-button:hover {
+.catalog-button:hover,
+.hero-button:hover {
 	background-color: #376b44;
 	color: white;
 	transition: all 0.3s ease;
-	cursor: pointer;
 }
 
 .catalog-buttons {
@@ -158,8 +164,7 @@ header {
 	gap: 10px;
 }
 
-.picture,
-.picture-button {
+.picture {
 	align-self: center;
 }
 
@@ -187,16 +192,13 @@ header {
 }
 
 .picture-button {
-	padding: 20px 60px;
 	color: #598d66;
 	border: 1px solid #598d66;
 	background-color: #e1ede6;
-	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
-	width: 100%;
 	margin-top: 10px;
-	cursor: pointer;
+	align-self: stretch;
 }
 
 .picture-button:hover {
@@ -270,13 +272,10 @@ header {
 .newbies-button {
 	border-radius: none;
 	border: none;
-	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
-	padding: 20px 60px;
 	background-color: #eedb6d;
 	margin-top: 30px;
-	cursor: pointer;
 	color: #2c2d35;
 }
 
@@ -320,10 +319,6 @@ header {
 .photos {
 	display: flex;
 	gap: 20px;
-}
-
-footer {
-	background-color: #e1ede6;
 }
 
 .footer-content {
